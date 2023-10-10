@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectUS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header>
+        <!--NavBar Section-->
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#">Forums</a></li>
+                    <li class="nav-item"><a href="#">Posts</a></li>
+                    <li class="nav-item"><a href="#">Detail</a></li>
+                </ul>
+            </nav>
+            <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+            <div class="brand">ContactUS</div>
+        </div>
+        <!--SearchBox Section-->
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="Everything">Everything</option>
+                    <option value="Titles">Titles</option>
+                    <option value="Descriptions">Descriptions</option>
+                </select>
+                <input type="text" name="q" placeholder="search ...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        <div class="container">
+            <!--Navigation-->
+            <div class="navigate">
+                <!-- <span><a href="">MyForum - Forums</a> >> <a href="">random subforum</a> >> <a href="">random topic</a></span> -->
+            </div>
+
+            <!--Topic Section-->
+            <div class="topic-container">
+                <!--Original thread-->
+                <div class="head">
+                    <div class="authors">Author</div>
+                    <div class="content">Topic: random topic (Read 1325 Times)</div>
+                </div>
+
+                <div class="body">
+                    <div class="authors">
+                        <div class="username"><a href="">Shubham</a></div>
+                        <div>The Creator</div>
+                        <img src="2.jpg" alt="">
+                        <div>Posts: <u>69</u></div>
+                        <div>Points: <u>4586</u></div>
+                    </div>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet consectetur.
+                        <br>Lorem ipsum dolor sit amet.
+                        <br><br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing.
+                        <br>
+                        <hr>
+                        SHUBHAM KUMAR BHARTI
+                        <br>
+                        <div class="comment">
+                            <button onclick="showComment()">Comment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Comment Area-->
+            <!--Comment Area-->
+            <div class="comment-area hide" id="comment-area">
+                <form id="comment-form">
+                    <textarea name="comment" id="comment-input" placeholder="comment here ... "></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+
+            <!--Comments Section-->
+            <div class="comments-container">
+                <div class="body">
+                    <div class="authors">
+                        <div class="username"><a href="">Anonymous1</a></div>
+                        <div>The Creator2</div>
+                        <img src="6_cleanup.jpg" alt="">
+                        <div>Posts: <u>1729</u></div>
+                        <div>Points: <u>4586</u></div>
+                    </div>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet consectetur.
+                        <br>Lorem ipsum dolor sit amet consectetur.
+                        <br><br>
+                        Lorem ipsum dolor sit amet.
+                        <br>
+                        <hr>
+                        SHUBHAM BHARTI
+                        <br>
+                        <div class="comment">
+                            <button onclick="showReply()">Reply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Reply Area-->
+            <!--Reply Area-->
+            <div class="comment-area hide" id="reply-area">
+                <form id="reply-form">
+                    <textarea name="reply" id="reply-input" placeholder="reply here ... "></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+
+
+            <!--Another Comment With replies-->
+            <div class="comments-container">
+                <div class="body">
+                    <div class="authors">
+                        <div class="username"><a href="">Anonymous2</a></div>
+                        <div>The Creator 3</div>
+                        <img src="1_cleanup.jpg" alt="">
+                        <div>Posts: <u>455</u></div>
+                        <div>Points: <u>4586</u></div>
+                    </div>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing..
+                        <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis!
+                        <br><br>
+                        Lorem.
+                        <br>
+                        <hr>
+                        SHUBH
+                        <br>
+                        <div class="comment">
+                            <button onclick="showReply()">Reply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Reply Area-->
+            <div class="comment-area hide" id="reply-area">
+                <textarea name="reply" id="" placeholder="reply here ... "></textarea>
+                <input type="submit" value="submit">
+            </div>
+
+
+
+        </div>
+        <footer>
+            <span>&copy; Shubham Kumar Bharti | Not For sale</span>
+        </footer>
+        <script src="script.js">
+
+</script>
+
+        
+</body>
+
+</html>
